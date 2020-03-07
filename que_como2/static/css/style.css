@@ -1,0 +1,46 @@
+body{
+    background-color: #fff5f2;
+}
+#header_alto {
+    height: 50px;
+    width: 100;
+    background-color: #ff8c69;
+};
+#header_bajo {
+    background-color: #b70000;
+    height: 15px;
+    width: 100;
+};
+#icono_home{
+    margin-left: 20px;
+    padding: 10px;
+    height: 45px;
+    width: 45px;
+    align-items: center;
+};
+#titleHome{
+    color: black;
+    text-align: left;
+};
+#usuario {
+    height: 45px;
+    width: 45px;
+    text-align: end;
+}
+a{
+    color: black;
+}
+
+#footer{
+    background-color: #ff8c69;
+    position: fixed; 
+    bottom: 0;
+    left: 0; 
+    right: 0;
+    height: 150px;
+    width: 100;
+}
+
+#iconos{
+    text-align: right;
+}

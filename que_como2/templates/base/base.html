@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¿Qué como?</title>
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.png') }}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+     <!-- header -->
+     <div  id="header_alto" class="row">
+        <div id="icono_home" class="col"><a href="/"><img src="{{ url_for('static', filename='img/icono.png') }}"></a></div>
+        <a id="titleHome" class="col" href="/"><h1>¿Qué como?</h1></a>
+        <div id="usuario" class="col" style="text-align: right;"><a href="/login"><img src="{{ url_for('static', filename='img/persona.jpg') }}"></a></div> 
+    </div>
+    <div id="header_bajo" class="row" style="height: 15px; background-color:  #f23900;"></div>
+
+
+
+    {% block content %}
+    {% endblock %}
+
+
+    <!-- footer -->
+    <div id="footer" class="modal-footer" class="row">
+
+        <div class="col">
+            <ul>
+                <li><a href="/preguntas-frecuentes">Preguntas frecuentes</a></li>
+                <li><a href="/contactanos">Contactanos</a></li>
+                <li><a href="/quienes-somos">Quienes somos</a></li>
+                <li><a href="/terminos-condiciones">Terminos y condiciones</a></li>
+            </ul>
+        </div>
+            
+        <div class="col" id="iconos" >
+            <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/"><i class="fab fa-instagram"> </i></a>
+            <a href="https://twitter.com/?lang=es"><i class="fab fa-twitter-square"> </i></a>
+            <h3>Gracias por visitarnos</h3>
+        </div>
+    </div>
+</body>
+</html>
